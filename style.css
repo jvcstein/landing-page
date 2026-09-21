@@ -15,7 +15,7 @@ li {
     list-style: none;
 }
 
-.header, .q1 {
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,6 @@ li {
     color: #F9FAF8;
     padding: 0px 6ch;
 }
-
 .logo-text {
     font-size: 24px;
 }
@@ -47,10 +46,19 @@ ul {
 }
 
 .q1 {
-    padding: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+}
+
+.q1-content {
+    max-width: 1200px;
+    padding: 60px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .q1-text {
@@ -58,7 +66,7 @@ ul {
 }
 
 .q1-image {
-    width: 50%;
+    display: flex;
     height: 200px;
     background-color: white;
 }
@@ -66,14 +74,23 @@ ul {
 .q2 {
     width: 100%;
     display: flex;
+    justify-content: center;
+}
+
+.q2-content {
+    max-width: 1200px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.q2-image {
+.q2-corpse {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    gap: 22px;
+    justify-content: center;
+    text-align: center;
 }
 
 .card {
@@ -81,17 +98,31 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    width: 150px;
+}
+
+.q2-image {
     width: 150px;
     height: 150px;
-    border-color: #1F2937;
+    background-color: whitesmoke;
+    border: solid 1px blue;
     border-radius: 5px;
 }
 
 .q3 {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #E5E7EB;
+}
+
+.q3-content {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
 
 #quote {
@@ -112,10 +143,17 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    padding: auto 50px;
+}
+
+.q4-card {
+    display: flex;
     background-color: #3882F6;
 }
 
 .q4-text {
+    display: flex;
 }
 
 .button {
