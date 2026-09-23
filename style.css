@@ -16,13 +16,22 @@ li {
 }
 
 .header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+}
+
+.header-content {
+    max-width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 0px 6ch;
 }
+
 .logo-text {
     font-size: 24px;
 }
@@ -61,14 +70,14 @@ ul {
     justify-content: center;
 }
 
-.q1-text {
+.q1-text, .q1-image {
     width: 50%;
 }
 
-.q1-image {
-    display: flex;
-    height: 200px;
-    background-color: white;
+.q1-image img {
+    width: 100%;
+    height: 216px;
+    object-fit: cover;
 }
 
 .q2 {
@@ -77,18 +86,24 @@ ul {
     justify-content: center;
 }
 
+.q2 h2 {
+    font-weight: 900;
+    margin: 30px;
+}
+
 .q2-content {
     max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 0 70px 0;
 }
 
 .q2-corpse {
     display: flex;
     flex-direction: row;
-    gap: 22px;
+    gap: 50px;
     justify-content: center;
     text-align: center;
 }
@@ -106,7 +121,6 @@ ul {
     width: 150px;
     height: 150px;
     background-color: whitesmoke;
-    border: solid 1px blue;
     border-radius: 5px;
 }
 
@@ -119,10 +133,10 @@ ul {
 }
 
 .q3-content {
-    max-width: 1200px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 100px 0px;
 }
 
 #quote {
@@ -135,7 +149,10 @@ ul {
 }
 
 #quote-foot {
-    margin: 0;
+    font-weight: 900;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .q4 {
@@ -144,21 +161,55 @@ ul {
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: auto 50px;
 }
 
-.q4-card {
+.q4-content {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    background-color: #3882F6;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3882f6;
+    color: white;
+    border-radius: 5px;
+    margin: 100px 0;
 }
 
 .q4-text {
     display: flex;
+    flex-direction: column;
+    margin: 50px 0 50px 100px;
+}
+
+.cta {
+    font-weight: 900;
+    font-size: 22px;
+}
+
+p {
+    margin: 0;
 }
 
 .button {
     background-color: #3882f6;
-    
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 32px;
+    margin-top: 10px;
+}
+
+.button-q4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882f6;
+    color: white;
+    border: solid white;
+    border-radius: 5px;
+    padding: 5px 32px;
+    margin: 50px 100px 50px 0px;
 }
 
 .main {
@@ -168,6 +219,7 @@ ul {
 .footer {
     width: 100%;
     display: flex;
+    height: 100px;
     justify-content: center;
     align-items: center;
     background-color: #1f2937;
